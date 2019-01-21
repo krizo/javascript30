@@ -1,7 +1,3 @@
-# javascript30
-
-My code and notes on [javascript30](https://javascript30.com/) course.
-
 ## 01 - Drumkit
 
 ##### Make a window (or other element) reacting on key pressing
@@ -29,7 +25,3 @@ audio.classList.add('playing')
 //...
 audio.classList.remove('playing')
 ``` 
-
- 
-
-
