@@ -12,4 +12,9 @@ transition: all 0.05s;
 transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); 
 ```
 
+##### Calling function each second
+```
+setInterval(my_function, 1000)
+```
+
 
