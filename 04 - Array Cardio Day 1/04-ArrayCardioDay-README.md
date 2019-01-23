@@ -10,3 +10,10 @@ const fifteen = inventors.filter(function(inventor) {
 })
 ```
 
+##### Map 
+
+Iterate through all items in the array, change them and produce the other array with the same length asd original
+
+```javascript
+const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
+```
