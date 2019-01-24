@@ -28,6 +28,24 @@ const order = inventors.sort( (a, b) => a.year > b.year ? 1 : -1)
 
 ##### Reduce
 
-```javascript
+Iterate through an array and manipulate with a starting value and all array's elements to calculate end result 
 
+```javascript
+const totalYears = inventors.reduce((total, inventor) => {
+      return total + (inventor.passed - inventor.year);
+    }, 0); // 0 -> number which total is starting from
+```
+
+Starting value can be also an object. Example for counting words by category:
+
+```javascript
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+     const transportation = data.reduce((obj, item) => {
+       if (!obj[item] ) {
+         obj[item] = 0;
+       }
+       obj[item]++;
+       return obj;
+     }, {})
 ```
